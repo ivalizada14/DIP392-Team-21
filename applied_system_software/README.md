@@ -1,1 +1,0 @@
-# applied_system_software
