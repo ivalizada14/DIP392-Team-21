@@ -1,0 +1,112 @@
+
+.App {
+  height: 100%;
+  width: 100vw;
+  text-align: center;
+  margin-bottom: 13vh;
+
+}
+
+.board {
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #2e53b9;
+
+}
+.board:before{
+  background-image: url("./assets/board-layer-black-large.svg");
+}
+.board:after{
+  background-image: url("./assets/board-layer-white-large.svg");
+}
+.row {
+  display: flex;
+  gap: 0.4vw;
+  margin-bottom: 0.3vh;
+}
+
+.cell {
+  width: 60px;
+  height: 59px;
+  border: 2px solid #000;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.red1{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (1).png");
+  background-size: 124px;
+  background-position: center;
+}
+.yellow1{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (2).png");
+  background-size: 124px;
+  background-position: center;
+}
+.red2{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (3).png");
+  background-size: 124px;
+  background-position: center;
+}
+.yellow2{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (4).png");
+  background-size: 124px;
+  background-position: center;
+}
+.red3{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (5).png");
+  background-size: 124px;
+  background-position: center;
+}
+.yellow3{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (6).png");
+  background-size: 124px;
+  background-position: center;
+}
+.red4{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (7).png");
+  background-size: 124px;
+  background-position: center;
+}
+.yellow4{
+  background-image: url("./assets/Connect 4 (Community) (Copy) (8).png");
+  background-size: 124px;
+  background-position: center;
+}
+
+
+h1 {
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  font-family: Arial, sans-serif;
+  color: green;
+}
+.restart{
+  justify-content: center;
+  display: none;
+}
+.restart-btn{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1vh 2vh;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.navButton{
+  margin-left: 2vw;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1vh 2vh;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  height: 6vh;
+}

@@ -1,0 +1,55 @@
+.container {
+    width: 98vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio-group {
+    position: relative;
+}
+
+.radio-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked+label .inner-circles {
+    border: 2px solid #ff0000;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s;
+    width: fit-content;
+}
+
+.inner-circles {
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
