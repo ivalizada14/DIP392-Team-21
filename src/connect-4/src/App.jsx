@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import './App.css';
+ import './App.css';
 import {useNavigate} from "react-router-dom";
 const NUM_ROWS = 6;
 const NUM_COLS = 7;
@@ -29,7 +29,6 @@ const App = () => {
     useEffect(() => {
         localStorage.setItem("mode", mode);
     }, [mode]);
-    console.log(mode);
 
 
 
@@ -70,6 +69,7 @@ const App = () => {
                 style={{ backgroundColor: "white" }}
                 className={`cell ${cellClass}${mode}`}
                 onClick={() => handleClick(colIdx)}
+                data-testid={`column-${colIdx}`}
             ></div>
         );
     };
